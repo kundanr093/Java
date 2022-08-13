@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Solution {
+    
+    
+    public static void main(String[] args) {
+        int num,num2, i=1, power=1;
+	
+		
+		Scanner scan = new Scanner(System.in);
+		num = scan.nextInt();
+		num2 = scan.nextInt();
+		
+		while(i<=num2)
+		{
+			
+			power = power * num;
+			i++;
+		}
+		System.out.println(power);
+	
+        
+    }
+}
