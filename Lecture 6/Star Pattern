@@ -1,0 +1,42 @@
+import java.util.Scanner;
+public class Solution {
+
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		int i = 1, num = scan.nextInt();
+		
+		while (i<=num)
+		{
+			int j=1;
+			while(j<=num-i)
+			{
+				System.out.print(" ");
+				j++;
+			}
+			j = 1;
+			while(j<=i)
+			{
+				System.out.print("*");
+				j++;
+				
+			}
+			int p =i-1;
+			j=1;
+			while(j<=i-1)
+			{
+				System.out.print("*");
+				p--;
+				j++;
+			}
+			
+			System.out.println();
+			i++;
+		}
+
+		
+	}
+
+}
