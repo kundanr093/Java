@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class Solution {
+
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		int i=1,num;
+		
+		num = scan.nextInt();
+		
+		while(i<=num)
+		{
+			int j=1;
+			while(j<=i)
+			{
+				System.out.print("*");
+				j++;
+			}
+			System.out.println();
+			i++;
+		}
+
+		
+	}
+
+}
