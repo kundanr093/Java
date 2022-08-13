@@ -1,0 +1,30 @@
+import java.util.Scanner;	
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int i=1,num;
+		num  = scan.nextInt();
+		
+		
+		while(i<=num)
+		{
+			int j = 1;
+			while(j<=i-1)
+			{
+				System.out.print(" ");
+				j++;
+			}
+			j=1;
+			while(j<=num)
+			{
+				System.out.print("*");
+				j++;
+			}
+	
+
+			System.out.println();
+			i++;
+		}
+	}
+}
