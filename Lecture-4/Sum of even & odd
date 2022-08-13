@@ -1,0 +1,23 @@
+import java.util.*;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+        int N = sc.nextInt();
+        int temp=0;
+        int sume=0;
+        int sumo=0;
+        while(N>0){
+            temp = N%10;
+            if(temp%2==0){
+                sume+=temp;
+            }else{
+                sumo+=temp;
+            }
+            N=N/10;
+        }
+        System.out.print(sume+" "+sumo);
+
+	}
+}
